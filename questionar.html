@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Comissió Digital de l'Escola Giroi">
+  <meta name="description" content="Enquesta anònima per al claustre de l'Escola Giroi sobre l'ús de la intel·ligència artificial a primària. Comissió Digital.">
+  <meta name="robots" content="noindex">
+
+  <title>Enquesta Claustre · Escola Giroi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/logo-giroi.png">
+</head>
+
+<body>
+  <!-- ACCESSIBILITAT: Salt de contingut -->
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
+
+  <!-- CAPÇALERA -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Inici - Escola Giroi, Formació Digital">
+        <img src="assets/logo-giroi.png" alt="Logotip oficial de l'Escola Giroi de la Garriga" class="school-logo-img">
+        <span class="logo-text">Escola Giroi · Formació IA</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegació principal">
+        <a href="index.html">🏠 Benvinguda</a>
+        <a href="questionar.html" aria-current="page">📝 Enquesta Claustre</a>
+        <a href="resultats.html">📊 Gràfica del Claustre</a>
+        <a href="eines.html">🛠️ Eines d'IA</a>
+        <a href="antigravity.html">🚀 Crea amb Antigravity</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="page-nav" aria-label="Ruta de navegació">
+    <ol>
+      <li><a href="index.html">Inici</a></li>
+      <li><span aria-current="page">Enquesta del Claustre</span></li>
+    </ol>
+  </nav>
+
+  <!-- CONTINGUT PRINCIPAL -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- CAPÇALERA DE SECCIÓ -->
+    <section aria-labelledby="survey-page-title" style="margin-bottom:var(--space-xl);">
+      <h1 id="survey-page-title">📝 Enquesta: Com usem la IA a l'Escola Giroi?</h1>
+      <p style="font-size:var(--size-lg);">
+        Aquest breu formulari té com a objectiu recollir una <strong>radiografia real i anònima de tot el nostre claustre</strong>:
+        si fem servir la IA, en quines tasques es basa aquest ús i quines prioritats tenim com a equip educatiu.
+      </p>
+
+      <!-- DUA / EXPLICACIÓ CLARA -->
+      <div class="alert alert-info" role="note" aria-label="Com funciona aquesta enquesta">
+        <span class="alert-icon" aria-hidden="true">ℹ️</span>
+        <div class="alert-body">
+          <strong>Com funciona?</strong>
+          <ul style="margin:0.4em 0 0; padding-left:1.25em;">
+            <li>Són <strong>6 preguntes ràpides</strong> d'opció única. Totes les respostes són igualment valuoses.</li>
+            <li><strong>Sense avaluació individual:</strong> No s'emet cap nota ni qualificació correctora. Les respostes s'agreguen de manera anònima a les de la resta del claustre.</li>
+            <li>En completar l'enviament, es projectarà la <strong>gràfica conjunta amb els percentatges de tot el claustre</strong> a la pantalla de la sala.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PRIVACITAT -->
+      <div class="pdp-box" style="margin-top:1rem;">
+        <span class="pdp-icon" aria-hidden="true">🔒</span>
+        <div>
+          <strong>Anonimat garantit</strong>
+          <p style="margin:0.2em 0 0; font-size:0.95rem;">
+            Aquesta enquesta no recull noms, correus ni cap dada que pugui identificar a qui respon. Podeu respondre amb total franquesa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARI D'ENQUESTA (omplert per quiz.js) -->
+    <div id="survey-container">
+      <noscript>
+        <div class="alert alert-warning" role="alert">
+          <span class="alert-icon" aria-hidden="true">⚠️</span>
+          <div class="alert-body">
+            <strong>JavaScript necessari:</strong> Cal activar JavaScript per respondre l'enquesta anònima i sincronitzar la resposta amb la gràfica del claustre.
+          </div>
+        </div>
+      </noscript>
+    </div>
+
+  </main>
+
+  <!-- PEU DE PÀGINA -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      <strong>Escola Giroi · La Garriga</strong> · Dinamitzat per la <strong>Comissió Digital</strong> · Novembre 2026
+    </p>
+    <p>Pàgina 2 de 5 · <a href="resultats.html">Consultar la gràfica general del claustre →</a></p>
+    <div class="ai-note" role="note">
+      <strong>🤖 Transparència pedagògica:</strong><br>
+      Aquesta enquesta anònima ha estat dissenyada per la <strong>Comissió Digital de l'Escola Giroi</strong>
+      per recollir la realitat del centre de manera estrictament confidencial, amb llenguatge inclusiu i sense cap recollida de dades personals.
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

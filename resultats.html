@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Comissió Digital de l'Escola Giroi">
+  <meta name="description" content="Gràfica general i radiografia del claustre de l'Escola Giroi sobre l'ús de la intel·ligència artificial. Comissió Digital.">
+  <meta name="robots" content="noindex">
+
+  <title>Visió General del Claustre · Escola Giroi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/logo-giroi.png">
+</head>
+
+<body>
+  <!-- ACCESSIBILITAT: Salt de contingut -->
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
+
+  <!-- CAPÇALERA -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Inici - Escola Giroi, Formació Digital">
+        <img src="assets/logo-giroi.png" alt="Logotip oficial de l'Escola Giroi de la Garriga" class="school-logo-img">
+        <span class="logo-text">Escola Giroi · Formació IA</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegació principal">
+        <a href="index.html">🏠 Benvinguda</a>
+        <a href="questionar.html">📝 Enquesta Claustre</a>
+        <a href="resultats.html" aria-current="page">📊 Gràfica del Claustre</a>
+        <a href="eines.html">🛠️ Eines d'IA</a>
+        <a href="antigravity.html">🚀 Crea amb Antigravity</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="page-nav" aria-label="Ruta de navegació">
+    <ol>
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="questionar.html">Enquesta</a></li>
+      <li><span aria-current="page">Gràfica de Visió General</span></li>
+    </ol>
+  </nav>
+
+  <!-- CONTINGUT PRINCIPAL -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- CAPÇALERA DE PROJECTOR -->
+    <section class="card" style="margin-bottom:var(--space-xl); border-top:6px solid var(--color-primary);" aria-labelledby="dashboard-title">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span class="badge badge-primary">Radiografia de centre</span>
+          <span class="badge" style="background:#fae8ff; color:#701a75; border:1px solid #f5d0fe; margin-left:0.3rem;">👥 Comissió Digital</span>
+          <h1 id="dashboard-title" style="margin-top:0.5rem; margin-bottom:0.25rem;">
+            📊 Visió General del Claustre: Com usem la IA?
+          </h1>
+          <p style="font-size:1.15rem; color:#111827; margin-bottom:0.5rem;">
+            Recull agregat de les respostes de l'equip docent dinamitzat per la <strong>Comissió Digital de l'Escola Giroi</strong>.
+          </p>
+        </div>
+
+        <!-- INDICADOR DE PARTICIPANTS -->
+        <div style="background:var(--color-primary-light); border:2px solid var(--color-primary); border-radius:var(--radius); padding:0.75rem 1.5rem; text-align:center;">
+          <span style="font-size:0.85rem; font-weight:700; color:var(--color-primary-dark); text-transform:uppercase; display:block;">
+            Respostes del claustre
+          </span>
+          <span id="total-participants-count" style="font-size:2.5rem; font-weight:900; color:var(--color-primary); line-height:1.1;">
+            22
+          </span>
+        </div>
+      </div>
+
+      <!-- BARRA D'EINES PER AL FORMADOR / PANTALLA GRAN -->
+      <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--color-border); display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center;">
+        <span style="font-size:0.9rem; font-weight:700; color:var(--color-neutral);">Eines de la sessió:</span>
+        <button class="btn btn-secondary" onclick="refreshDashboard()" style="padding:0.4rem 1rem; font-size:0.9rem;">
+          🔄 Actualitzar dades en directe
+        </button>
+        <button class="btn btn-secondary" onclick="loadSampleData()" style="padding:0.4rem 1rem; font-size:0.9rem;">
+          📋 Carregar mostra del claustre (22 respostes)
+        </button>
+        <button class="btn btn-secondary" onclick="resetSurveyData()" style="padding:0.4rem 1rem; font-size:0.9rem; color:var(--color-accent); border-color:var(--color-accent);">
+          🗑️ Reiniciar a zero per votar ara
+        </button>
+        <button class="btn btn-primary" onclick="window.print()" style="padding:0.4rem 1rem; font-size:0.9rem; margin-left:auto;">
+          🖨️ Imprimir informe
+        </button>
+      </div>
+    </section>
+
+    <!-- QUADRE DE LES 6 GRÀFIQUES DEL CLAUSTRE -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:1.5rem; margin-bottom:2.5rem;">
+
+      <!-- GRÀFICA 1 -->
+      <section class="card" style="margin:0; border-top:5px solid #2980b9;" aria-labelledby="g1-title">
+        <h2 id="g1-title" style="font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+          <span>📈</span> 1. Freqüència i grau d'ús actual
+        </h2>
+        <p style="font-size:0.85rem; color:#4a5568; margin-bottom:1rem;">
+          Quin contacte té el claustre amb les eines d'IA generativa?
+        </p>
+        <div id="chart-frequency"></div>
+      </section>
+
+      <!-- GRÀFICA 2 -->
+      <section class="card" style="margin:0; border-top:5px solid #1a7d3f;" aria-labelledby="g2-title">
+        <h2 id="g2-title" style="font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+          <span>🎯</span> 2. En què es basa aquest ús?
+        </h2>
+        <p style="font-size:0.85rem; color:#4a5568; margin-bottom:1rem;">
+          En quins àmbits de primària apliquem principalment la IA?
+        </p>
+        <div id="chart-use-basis"></div>
+      </section>
+
+      <!-- GRÀFICA 3 -->
+      <section class="card" style="margin:0; border-top:5px solid #e67e22;" aria-labelledby="g3-title">
+        <h2 id="g3-title" style="font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+          <span>💬</span> 3. Com formulem les peticions (prompts)?
+        </h2>
+        <p style="font-size:0.85rem; color:#4a5568; margin-bottom:1rem;">
+          Grau de sofisticació i context en les instruccions.
+        </p>
+        <div id="chart-prompts"></div>
+      </section>
+
+      <!-- GRÀFICA 4 -->
+      <section class="card" style="margin:0; border-top:5px solid #c0392b;" aria-labelledby="g4-title">
+        <h2 id="g4-title" style="font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+          <span>🔍</span> 4. Revisió i filtre del contingut
+        </h2>
+        <p style="font-size:0.85rem; color:#4a5568; margin-bottom:1rem;">
+          Com garantim el rigor abans d'utilitzar el material a l'aula?
+        </p>
+        <div id="chart-review"></div>
+      </section>
+
+      <!-- GRÀFICA 5 -->
+      <section class="card" style="margin:0; border-top:5px solid #8e44ad;" aria-labelledby="g5-title">
+        <h2 id="g5-title" style="font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+          <span>🔒</span> 5. Protecció de dades (RGPD)
+        </h2>
+        <p style="font-size:0.85rem; color:#4a5568; margin-bottom:1rem;">
+          Grau d'anonimització de les dades del nostre alumnat.
+        </p>
+        <div id="chart-rgpd"></div>
+      </section>
+
+      <!-- GRÀFICA 6 -->
+      <section class="card" style="margin:0; border-top:5px solid #16a085;" aria-labelledby="g6-title">
+        <h2 id="g6-title" style="font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+          <span>🤝</span> 6. Prioritats i necessitats de centre
+        </h2>
+        <p style="font-size:0.85rem; color:#4a5568; margin-bottom:1rem;">
+          Quines propostes prioritza el claustre per seguir avançant?
+        </p>
+        <div id="chart-needs"></div>
+      </section>
+
+    </div>
+
+    <!-- PREGUNTES CLAU PER AL DEBAT DEL CLAUSTRE -->
+    <section class="card" style="background:var(--color-primary-light); border:2px solid var(--color-primary);" aria-labelledby="debat-title">
+      <h2 id="debat-title" style="color:var(--color-primary);">🗣️ Preguntes per obrir el diàleg al claustre (20 min)</h2>
+      <ul style="margin-bottom:0; font-size:1.05rem; line-height:1.7;">
+        <li><strong>On se situa el consens principal?</strong> Observem quines àrees sumen més percentatge en l'ús actual (disseny d'activitats vs. inclusió DUA).</li>
+        <li><strong>Quins riscos detectem a les dades?</strong> Revisem el grau de filtre crític i la consciència sobre la protecció de la privacitat de l'alumnat.</li>
+        <li><strong>Quins acords podem prendre avui?</strong> Quin criteri comú adoptem a l'Escola Giroi sobre l'ús de la IA abans de cloure la sessió?</li>
+      </ul>
+      <div style="margin-top:1.5rem;">
+        <a href="eines.html" class="btn btn-primary btn-lg">
+          🛠️ Continuar cap al repositori d'eines pràctiques →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PEU DE PÀGINA -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      <strong>Escola Giroi · La Garriga</strong> · Panell dinamitzat per la <strong>Comissió Digital</strong> · Novembre 2026
+    </p>
+    <div class="ai-note" role="note">
+      <strong>🤖 Transparència pedagògica:</strong><br>
+      Aquest panell agrega les respostes de manera estrictament anònima sense emmagatzemar cap dada personal.
+      Elaborat amb suport d'IA, llenguatge inclusiu i dinamitzat per la <strong>Comissió Digital de l'Escola Giroi</strong> com a equip formador.
+    </div>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

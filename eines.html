@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Comissió Digital de l'Escola Giroi">
+  <meta name="description" content="Repositori d'eines d'intel·ligència artificial per a l'educació primària. Escola Giroi de la Garriga. Comissió Digital.">
+  <meta name="robots" content="noindex">
+
+  <title>Eines d'IA · Escola Giroi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/logo-giroi.png">
+</head>
+
+<body>
+  <!-- ACCESSIBILITAT: Salt de contingut -->
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
+
+  <!-- CAPÇALERA AMB LOGO OFICIAL -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Inici - Escola Giroi, Formació Digital">
+        <img src="assets/logo-giroi.png" alt="Logotip oficial de l'Escola Giroi de la Garriga" class="school-logo-img">
+        <span class="logo-text">Escola Giroi · Formació IA</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegació principal">
+        <a href="index.html">🏠 Benvinguda</a>
+        <a href="questionar.html">📝 Enquesta Claustre</a>
+        <a href="resultats.html">📊 Gràfica del Claustre</a>
+        <a href="eines.html" aria-current="page">🛠️ Eines d'IA</a>
+        <a href="antigravity.html">🚀 Crea amb Antigravity</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="page-nav" aria-label="Ruta de navegació">
+    <ol>
+      <li><a href="index.html">Inici</a></li>
+      <li><span aria-current="page">Repositori d'eines d'IA</span></li>
+    </ol>
+  </nav>
+
+  <!-- CONTINGUT PRINCIPAL -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- CAPÇALERA -->
+    <section aria-labelledby="tools-title" style="margin-bottom:var(--space-xl);">
+      <h1 id="tools-title">🛠️ Repositori d'Eines d'IA per a Docents</h1>
+      <p style="font-size:var(--size-lg);">
+        Una selecció d'eines gratuïtes o amb pla educatiu, avaluades pel seu rigor i aplicabilitat a l'educació primària.
+      </p>
+
+      <!-- REPTE DE LA SESSIÓ -->
+      <div class="alert alert-warning" role="note" aria-label="Repte de la sessió de claustre">
+        <span class="alert-icon" aria-hidden="true">🎯</span>
+        <div class="alert-body">
+          <strong>Repte de la sessió (30 min)</strong>
+          Per parelles: trieu <strong>una eina</strong> (us recomanem especialment les 5 eines prioritàries de la primera part), exploreu-la durant 20 minuts
+          i prepareu una explicació de 2 minuts: <em>«Com l'aplicaríeu a la vostra aula de l'Escola Giroi?»</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+      PRIMERA PART: EINES DESTACADES PER AL CLAUSTRE DE L'ESCOLA GIROI
+    ================================================================ -->
+    <section aria-labelledby="featured-tools-title" style="margin-bottom:var(--space-2xl);">
+      <div style="border-bottom:3px solid var(--color-primary); padding-bottom:0.5rem; margin-bottom:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+        <div>
+          <span class="badge badge-primary">Bloc 1 Prioritari</span>
+          <h2 id="featured-tools-title" style="margin:0.25rem 0 0; color:var(--color-primary);">
+            🌟 Eines Destacades per al Claustre de l'Escola Giroi
+          </h2>
+        </div>
+        <span style="font-size:0.9rem; color:var(--color-neutral); font-weight:600;">5 eines seleccionades per començar</span>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- 1. LEARNKITS.APP -->
+        <article class="tool-card" data-category="creació" style="border-top:6px solid #2980b9;" aria-labelledby="tool-learnkits-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🧰</span>
+            <h3 id="tool-learnkits-title">Learnkits.app</h3>
+          </div>
+          <div>
+            <span class="badge badge-primary">🎨 Creació de recursos</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït per a docents</span>
+          </div>
+          <p>
+            Plataforma 'tot en un' dissenyada específicament per a docents. Permet generar activitats didàctiques personalitzades,
+            fitxes de treball graduades, jocs per a l'aula, plans de sessió i dinàmiques cooperatives adaptades al nivell d'edat.
+          </p>
+          <details>
+            <summary style="cursor:pointer; color:var(--color-primary); font-weight:700; font-size:var(--size-sm);">
+              💡 Aplicació pràctica a l'Escola Giroi
+            </summary>
+            <p style="font-size:var(--size-sm); margin-top:0.5em;">
+              Genera una dinàmica de preguntes per racons d'aprenentatge sobre el municipi de La Garriga o la tardor
+              diferenciant el nivell de comprensió lectora per a cicle inicial i mitjà.
+            </p>
+          </details>
+          <div class="tool-card-footer">
+            <a href="https://learnkits.app" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               aria-label="Accedir a Learnkits.app (s'obre en una pestanya nova)">
+              Accés a Learnkits.app →
+            </a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- 2. NOTEBOOKLM -->
+        <article class="tool-card" data-category="contingut" style="border-top:6px solid #16a085;" aria-labelledby="tool-notebooklm-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">📓</span>
+            <h3 id="tool-notebooklm-title">NotebookLM (Google)</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#fff3e0; color:#e65100;">📚 Recerca sobre documents</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>
+            Assistent d'IA que <strong>només treballa sobre els teus propis documents</strong> (PDFs, programacions, documents de centre o el decret curricular).
+            Zero al·lucinacions: cita la pàgina exacta de les teves fonts i fins i tot crea un resum en format àudio/conversa.
+          </p>
+          <details>
+            <summary style="cursor:pointer; color:var(--color-primary); font-weight:700; font-size:var(--size-sm);">
+              💡 Aplicació pràctica a l'Escola Giroi
+            </summary>
+            <p style="font-size:var(--size-sm); margin-top:0.5em;">
+              Puja el document del Projecte Educatiu de Centre (PEC) o la programació d'una situació d'aprenentatge
+              i demana-li: <em>«Quins sabers bàsics i competències específiques s'estan treballant a 4t de primària?»</em>
+            </p>
+          </details>
+          <div class="tool-card-footer">
+            <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               aria-label="Accedir a NotebookLM (s'obre en una pestanya nova)">
+              Accés a NotebookLM →
+            </a>
+            <span class="badge badge-primary">🌐 Web · Compte Google</span>
+          </div>
+        </article>
+
+        <!-- 3. AVALUARIA -->
+        <article class="tool-card" data-category="avaluació" style="border-top:6px solid #1a7d3f;" aria-labelledby="tool-avaluaria-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">📊</span>
+            <h3 id="tool-avaluaria-title">AvaluarIA</h3>
+          </div>
+          <div>
+            <span class="badge badge-success">📊 Avaluació competencial</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Educatiu</span>
+          </div>
+          <p>
+            Eina enfocada a l'avaluació formativa i competencial. Ajuda a redactar matrius de criteris d'avaluació,
+            rúbriques analítiques amb descripció d'assoliment per nivells i dianes d'autoavaluació per a l'alumnat.
+          </p>
+          <details>
+            <summary style="cursor:pointer; color:var(--color-primary); font-weight:700; font-size:var(--size-sm);">
+              💡 Aplicació pràctica a l'Escola Giroi
+            </summary>
+            <p style="font-size:var(--size-sm); margin-top:0.5em;">
+              Crea una rúbrica en 4 nivells (en procés, assolit, notable, excel·lent) amb llenguatge accessible
+              per avaluar la presentació oral d'un projecte de medi natural a 5è.
+            </p>
+          </details>
+          <div class="tool-card-footer">
+            <a href="https://avaluaria.pilargargallo.cat/" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               aria-label="Accedir a AvaluarIA de Pilar Gargallo (s'obre en una pestanya nova)">
+              Accés a AvaluarIA →
+            </a>
+            <span class="badge badge-success">🌐 Web · Pilar Gargallo</span>
+          </div>
+        </article>
+
+        <!-- 4. CERQUEM BÉ -->
+        <article class="tool-card" data-category="comunicació" style="border-top:6px solid #e67e22;" aria-labelledby="tool-cerquembe-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🔍</span>
+            <h3 id="tool-cerquembe-title">Cerquem bé</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#ede7f6; color:#6a1b9a;">🔎 Alfabetització digital</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Recurs obert</span>
+          </div>
+          <p>
+            Projecte i entorn per ensenyar a l'alumnat de primària i secundària a cercar amb criteri crític,
+            identificar biaixos, distingir continguts generats per IA de fonts contrastades i contrastar informació a la xarxa.
+          </p>
+          <details>
+            <summary style="cursor:pointer; color:var(--color-primary); font-weight:700; font-size:var(--size-sm);">
+              💡 Aplicació pràctica a l'Escola Giroi
+            </summary>
+            <p style="font-size:var(--size-sm); margin-top:0.5em;">
+              Proposta per a 6è: activitat de 'detectius de la informació' on l'alumnat analitza un text generat
+              per IA amb errors intencionats per aprendre a validar fets amb enciclopèdies digitals i fonts oficials.
+            </p>
+          </details>
+          <div class="tool-card-footer">
+            <a href="https://paula-pacho.github.io/CDA-app/" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               aria-label="Accedir a Cerquem bé (s'obre en una pestanya nova)">
+              Accés a Cerquem bé →
+            </a>
+            <span class="badge" style="background:#ede7f6; color:#6a1b9a;">🌐 Web · CDA App</span>
+          </div>
+        </article>
+
+        <!-- 5. INCLUSIVA.CAT -->
+        <article class="tool-card" data-category="accessibilitat" style="border-top:6px solid #8e44ad;" aria-labelledby="tool-inclusiva-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">♿</span>
+            <h3 id="tool-inclusiva-title">Inclusiva.cat</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#e0f2f1; color:#00695c;">♿ DUA i Inclusió</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Públic i Gratuït</span>
+          </div>
+          <p>
+            Portal de referència a Catalunya sobre educació inclusiva i aplicació del DUA. Ofereix recursos,
+            bancs d'eines digitals i solucions amb suport d'IA per adaptar materials a alumnat amb NEE, dislèxia o TEA.
+          </p>
+          <details>
+            <summary style="cursor:pointer; color:var(--color-primary); font-weight:700; font-size:var(--size-sm);">
+              💡 Aplicació pràctica a l'Escola Giroi
+            </summary>
+            <p style="font-size:var(--size-sm); margin-top:0.5em;">
+              Trobar pautes i eines per convertir una fitxa de text dens en una versió de lectura fàcil amb suport de
+              pictogrames o síntesi de veu per a alumnes que necessiten un accés diversificat al currículum.
+            </p>
+          </details>
+          <div class="tool-card-footer">
+            <a href="https://inclusiva.cat" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               aria-label="Accedir a Inclusiva.cat (s'obre en una pestanya nova)">
+              Accés a Inclusiva.cat →
+            </a>
+            <span class="badge" style="background:#e0f2f1; color:#00695c;">🌐 Portal web</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+      SEGONA PART: REPOSITORI GENERAL COMPLEMENTARI
+    ================================================================ -->
+    <section aria-labelledby="general-tools-title">
+      <div style="border-bottom:3px solid var(--color-border); padding-bottom:0.5rem; margin-bottom:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+        <div>
+          <span class="badge badge-warning">Bloc 2 Complementari</span>
+          <h2 id="general-tools-title" style="margin:0.25rem 0 0; color:var(--color-neutral);">
+            🗂️ Més Eines d'IA per Explorar
+          </h2>
+        </div>
+        <span style="font-size:0.9rem; color:var(--color-neutral);">Filtra per categoria segons la teva necessitat</span>
+      </div>
+
+      <!-- FILTRE -->
+      <div class="tools-filter" role="group" aria-label="Filtra les eines per categoria">
+        <span id="filter-label" style="font-weight:700; color:var(--color-primary);">Filtra per:</span>
+        <button class="filter-btn active" data-category="all" aria-pressed="true" aria-describedby="filter-label">
+          🔍 Totes
+        </button>
+        <button class="filter-btn" data-category="creació" aria-pressed="false" aria-describedby="filter-label">
+          🎨 Creació
+        </button>
+        <button class="filter-btn" data-category="avaluació" aria-pressed="false" aria-describedby="filter-label">
+          📊 Avaluació
+        </button>
+        <button class="filter-btn" data-category="comunicació" aria-pressed="false" aria-describedby="filter-label">
+          💬 Comunicació
+        </button>
+        <button class="filter-btn" data-category="contingut" aria-pressed="false" aria-describedby="filter-label">
+          📚 Contingut
+        </button>
+        <button class="filter-btn" data-category="accessibilitat" aria-pressed="false" aria-describedby="filter-label">
+          ♿ Accessibilitat
+        </button>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- CANVA -->
+        <article class="tool-card" data-category="creació" aria-labelledby="tool-canva-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🎨</span>
+            <h3 id="tool-canva-title">Canva per a l'Educació</h3>
+          </div>
+          <div>
+            <span class="badge badge-primary">🎨 Creació</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït (docents)</span>
+          </div>
+          <p>Dissenya presentacions, murals, infografies i fitxes amb suport d'IA (Magic Design). Gratuït per a mestres verificats.</p>
+          <div class="tool-card-footer">
+            <a href="https://www.canva.com/education/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés →</a>
+          </div>
+        </article>
+
+        <!-- GAMMA -->
+        <article class="tool-card" data-category="creació" aria-labelledby="tool-gamma-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">📊</span>
+            <h3 id="tool-gamma-title">Gamma</h3>
+          </div>
+          <div>
+            <span class="badge badge-primary">🎨 Creació</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium</span>
+          </div>
+          <p>Genera presentacions i documents estructurats a partir d'un tema o un text senzill en qüestió de segons.</p>
+          <div class="tool-card-footer">
+            <a href="https://gamma.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés →</a>
+          </div>
+        </article>
+
+        <!-- QUIZIZZ -->
+        <article class="tool-card" data-category="avaluació" aria-labelledby="tool-quizai-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">❓</span>
+            <h3 id="tool-quizai-title">Quizizz amb IA</h3>
+          </div>
+          <div>
+            <span class="badge badge-success">📊 Avaluació</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>Crea qüestionaris lúdics a partir d'un text o document de classe amb retroacció interactiva immediata per a l'alumnat.</p>
+          <div class="tool-card-footer">
+            <a href="https://quizizz.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés →</a>
+          </div>
+        </article>
+
+        <!-- GEMINI -->
+        <article class="tool-card" data-category="comunicació" aria-labelledby="tool-gemini-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">✨</span>
+            <h3 id="tool-gemini-title">Google Gemini</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#ede7f6; color:#6a1b9a;">💬 Assistent</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>Model de conversa integrat amb Google Workspace (Docs, Classroom). Excel·lent per sintetitzar, redactar i adaptar textos en català.</p>
+          <div class="tool-card-footer">
+            <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés →</a>
+          </div>
+        </article>
+
+        <!-- MAGICSCHOOL -->
+        <article class="tool-card" data-category="contingut" aria-labelledby="tool-magicschool-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🧙</span>
+            <h3 id="tool-magicschool-title">MagicSchool.ai</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#fff3e0; color:#e65100;">📚 Eines docents</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>Més de 60 plantilles específiques per a l'escola: plans de classe, adaptacions de lectura, correus a famílies i preguntes DUA.</p>
+          <div class="tool-card-footer">
+            <a href="https://www.magicschool.ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés →</a>
+          </div>
+        </article>
+
+        <!-- DIFFIT -->
+        <article class="tool-card" data-category="accessibilitat" aria-labelledby="tool-diffit-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🧩</span>
+            <h3 id="tool-diffit-title">Diffit for Teachers</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#e0f2f1; color:#00695c;">♿ Inclusió DUA</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium (pla mestre)</span>
+          </div>
+          <p>
+            Eina estrella de diferenciació DUA: adapta qualsevol text, PDF o vídeo de YouTube a múltiples nivells lectors,
+            crea preguntes de comprensió, glossari de vocabulari clau i fitxes imprimibles o digitals en català.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://web.diffit.me" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Diffit →</a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- CURIPOD -->
+        <article class="tool-card" data-category="creació" aria-labelledby="tool-curipod-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">💡</span>
+            <h3 id="tool-curipod-title">Curipod</h3>
+          </div>
+          <div>
+            <span class="badge badge-primary">🎨 Lliçons interactives</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium</span>
+          </div>
+          <p>
+            Genera presentacions interactives en segons a partir d'un tema: inclou activitats de dibuix lliure, núvols de paraules,
+            preguntes obertes i votacions en temps real perquè tot l'alumnat participi des de la tauleta o ordinador.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://curipod.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Curipod →</a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- BRISK TEACHING -->
+        <article class="tool-card" data-category="contingut" aria-labelledby="tool-brisk-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">⚡</span>
+            <h3 id="tool-brisk-title">Brisk Teaching</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#fff3e0; color:#e65100;">📚 Extensió docent</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>
+            Extensió d'IA per a Google Chrome que s'integra directament a Google Docs, Classroom i a qualsevol pàgina web:
+            canvia el nivell de lectura d'un text amb un sol clic, genera preguntes i redacta retroacció formativa.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://www.briskteaching.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Brisk →</a>
+            <span class="badge badge-primary">🧩 Extensió Chrome</span>
+          </div>
+        </article>
+
+        <!-- PERPLEXITY AI -->
+        <article class="tool-card" data-category="comunicació" aria-labelledby="tool-perplexity-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🔎</span>
+            <h3 id="tool-perplexity-title">Perplexity AI</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#ede7f6; color:#6a1b9a;">💬 Cerca contrastada</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>
+            Cercador conversacional d'IA que respon a les teves consultes citant sempre les fonts web actualitzades en temps real.
+            Ideal per a docents per preparar temes, trobar fets verificats o bibliografia sense por a dades inventades.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Perplexity →</a>
+            <span class="badge badge-primary">🌐 Web · App</span>
+          </div>
+        </article>
+
+        <!-- CLAUDE -->
+        <article class="tool-card" data-category="comunicació" aria-labelledby="tool-claude-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🎭</span>
+            <h3 id="tool-claude-title">Claude (Anthropic)</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#ede7f6; color:#6a1b9a;">💬 Assistent de redacció</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium</span>
+          </div>
+          <p>
+            Model de conversa reconegut per la seva excel·lent expressió natural en català, to respectuós i gran capacitat
+            per redactar contes, cartes per a famílies, situacions d'aprenentatge i analitzar documents extensos.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Claude →</a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- SUNO -->
+        <article class="tool-card" data-category="creació" aria-labelledby="tool-suno-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🎵</span>
+            <h3 id="tool-suno-title">Suno (Creació musical)</h3>
+          </div>
+          <div>
+            <span class="badge badge-primary">🎨 Cançons educatives</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium</span>
+          </div>
+          <p>
+            Crea cançons completes amb música i veu a partir de la lletra que tu li escriguis. A primària i infantil és fantàstic
+            per inventar cançons sobre les rutines d'aula, les estacions, la natura o conceptes de matemàtiques en català.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://suno.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Suno →</a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- GOBLIN TOOLS -->
+        <article class="tool-card" data-category="accessibilitat" aria-labelledby="tool-goblin-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🍄</span>
+            <h3 id="tool-goblin-title">Goblin.tools</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#e0f2f1; color:#00695c;">♿ Suport NEE / TDAH</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">100% Gratuït</span>
+          </div>
+          <p>
+            Col·lecció d'eines senzilles pensades per a persones neurodivergents. 'Magic ToDo' desglossa qualsevol instrucció o
+            projecte complex en micro-passos concrets i seqüenciats, facilitant l'autonomia de l'alumnat que es dispersa.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://goblin.tools" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Goblin.tools →</a>
+            <span class="badge badge-primary">🌐 Web · Sense registre</span>
+          </div>
+        </article>
+
+        <!-- IDEOGRAM -->
+        <article class="tool-card" data-category="creació" aria-labelledby="tool-ideogram-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">🖼️</span>
+            <h3 id="tool-ideogram-title">Ideogram</h3>
+          </div>
+          <div>
+            <span class="badge badge-primary">🎨 Imatges amb text</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium</span>
+          </div>
+          <p>
+            Generador d'imatges amb IA que destaca per escriure text llegible i tipografies a les il·lustracions:
+            ideal per crear cartells d'aula amb normes, etiquetes de racons, cobertes de dossiers o targetes visuals.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://ideogram.ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Ideogram →</a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- EDUAIDE.AI -->
+        <article class="tool-card" data-category="contingut" aria-labelledby="tool-eduaide-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">📖</span>
+            <h3 id="tool-eduaide-title">Eduaide.ai</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#fff3e0; color:#e65100;">📚 Recursos didàctics</span>
+            <span class="badge badge-warning" style="margin-left:0.3em;">Freemium</span>
+          </div>
+          <p>
+            Més de 100 plantilles educatives per dissenyar seqüències didàctiques, problemes matemàtics de la vida quotidiana,
+            jocs de rol, activitats cooperatives i guies d'indagació científica en català.
+          </p>
+          <div class="tool-card-footer">
+            <a href="https://www.eduaide.ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés a Eduaide →</a>
+            <span class="badge badge-primary">🌐 Web</span>
+          </div>
+        </article>
+
+        <!-- IMMERSIVE READER -->
+        <article class="tool-card" data-category="accessibilitat" aria-labelledby="tool-read-title">
+          <div class="tool-card-header">
+            <span class="tool-emoji" aria-hidden="true">📢</span>
+            <h3 id="tool-read-title">Lectura Immersiva (Microsoft)</h3>
+          </div>
+          <div>
+            <span class="badge" style="background:#e0f2f1; color:#00695c;">♿ Accessibilitat</span>
+            <span class="badge badge-success" style="margin-left:0.3em;">Gratuït</span>
+          </div>
+          <p>Lectura en veu alta, separació sil·làbica, diccionari visual i suport imprescindible per a alumnes amb dificultats de lectura o NEE.</p>
+          <div class="tool-card-footer">
+            <a href="https://www.onenote.com/learningtools" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accés →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BONES PRÀCTIQUES DEL CLAUSTRE -->
+    <section class="card mt-xl" aria-labelledby="tips-title">
+      <h2 id="tips-title">✅ Recordatori per al claustre de l'Escola Giroi</h2>
+      <ul>
+        <li><strong>El criteri docent al comandament:</strong> La IA és una eina de suport; la decisió pedagògica i la validació final corresponen sempre a l'equip docent.</li>
+        <li><strong>Protecció de dades:</strong> Mai s'han d'introduir dades personals reals de l'alumnat a eines comercials (RGPD).</li>
+        <li><strong>Inclusió DUA:</strong> Fem servir la IA per obrir camins i oferir alternatives, mai per limitar les oportunitats de cap infant.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- PEU DE PÀGINA -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      <strong>Escola Giroi · La Garriga</strong> · Repositori dinamitzat per la <strong>Comissió Digital</strong> · Novembre 2026
+    </p>
+    <div class="ai-note" role="note">
+      <strong>🤖 Transparència pedagògica:</strong><br>
+      Aquest repositori ha estat seleccionat i analitzat amb criteri pedagògic i perspectiva inclusiva per la <strong>Comissió Digital de l'Escola Giroi</strong> com a equip formador.
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
